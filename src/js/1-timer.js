@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
 import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const inputText = document.getElementById('datetime-picker');
 const startButton = document.querySelector('[data-start]');
@@ -24,9 +25,9 @@ const options = {
       iziToast.warning({
         message: 'Please choose a date in the future',
         messageColor: 'red',
-        messageSize: 25,
-        timeout: 2000,
-        position: 'center',
+        messageSize: 20,
+        timeout: 3000,
+        position: 'topRight',
       });
 
       startButton.disabled = true;
